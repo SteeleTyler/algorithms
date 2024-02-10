@@ -1,96 +1,31 @@
-## Developed live on twitch
-[ThePrimeagen](https://twitch.tv/ThePrimeagen)
+# Algorithms
 
-## Naming
-### Lig-Machine
-Lengthy Instrumentation Generating Massive Anticompetitive Computational Help for Intermediate Coders // n9
+These are my implementations of common CompSci algorithms. They were completed as coursework for [The Last Algorithms Course You'll Need](https://frontendmasters.com/courses/algorithms/).
 
-### Ligmata
-Literal Improvement Gaining Master and Tutelage on Algorithms
-Let's Intelligently Generate Multiple Algorithm Training Assessments // permdaddy
+This repo is forked from https://github.com/ThePrimeagen/kata-machine, but the content of `src/code` is my own.
 
-### Sugma Nuts
-Studious Users Get Major Abilities. New Useful Training for Students
+## Solutions
 
-### Ligma Farts
-Learn Intermediate Groundbreaking Massive Algorithms. Free Algorithm Research & Training System
-
-
-### If you have a suggestion
-make an issue and we will come up with the potential name.
-
-### WARNING
-I have just started to add algorithms, so the number of supported algorithms is
-limited at the moment, but will grow fairly quick.
-
-### WARNING
-OUT OF DATE.  We have quite a few more.  need to update
-### Supported Algorithm
-* Insertion sort
-* Merge sort
-* QuickSort
-* Prim's MST (Adjacency List)
-* Dijkstra's Shortest Path (Adjacency List)
-
-### Supported Data Structures
-* Singly linked list
-* Doubly linked list
-* Queue
-* Stack
-* Graph with Adjacency List
-* Graph with Adjacency Matrix (untested)
-
-### How It Works
-
-Make sure you have [Node.js](https://nodejs.org/en/) and yarn installed: `npm install --global yarn`
-
-clone the repo and install the dependencies
-
-```bash
-yarn install
-```
-
-edit the `ligma.config.js` file
-```javascript
-module.exports = {
-    dsa: [
-        "InsertionSort",
-        "MergeSort",
-        "Queue",
-        "Stack",
-        "QuickSort",
-        "DijkstraList",
-        "PrimsList",
-    ],
-}
-```
-
-create a day of katas, this will use the list in the `ligma.config.js`.
-```bash
-yarn generate
-```
-
-this will progressively create folders named
-
-```
-src/day1
-src/day2
-...
-```
-
-`yarn generate` will also update the `tsconfig.json` and `jest.config` to point
-the latest `day` folder via tspaths.  This allows us to avoid updating anything
-for testing each day.
-
-#### Testing
-```
-yarn test
-```
-
-I have yet to create a testing strategy for next sets of algorithms, but we
-will get there when i cross that bridge.
-
-### Help wanted
-A simple way to specify test, thinking something like `tests.json` and `cat
-test.json 2> /dev/null` to specify the tests to run.  tests.json wouldn't be
-committed.
+-   [ArrayList](src/code/ArrayList.ts)
+-   [BFSGraphMatrix](src/code/BFSGraphMatrix.ts)
+-   [BTBFS](src/code/BTBFS.ts)
+-   [BTInOrder](src/code/BTInOrder.ts)
+-   [BTPostOrder](src/code/BTPostOrder.ts)
+-   [BTPreOrder](src/code/BTPreOrder.ts)
+-   [BinarySearchList](src/code/BinarySearchList.ts)
+-   [BubbleSort](src/code/BubbleSort.ts)
+-   [CompareBinaryTrees](src/code/CompareBinaryTrees.ts)
+-   [DFSGraphList](src/code/DFSGraphList.ts)
+-   [DFSOnBST](src/code/DFSOnBST.ts)
+-   [DijkstraList](src/code/DijkstraList.ts)
+-   [DoublyLinkedList](src/code/DoublyLinkedList.ts)
+-   [LRU](src/code/LRU.ts)
+-   [LinearSearchList](src/code/LinearSearchList.ts)
+-   [MazeSolver](src/code/MazeSolver.ts)
+-   [MinHeap](src/code/MinHeap.ts)
+-   [Queue](src/code/Queue.ts)
+-   [QuickSort](src/code/QuickSort.ts)
+-   [RingBuffer](src/code/RingBuffer.ts)
+-   [SinglyLinkedList](src/code/SinglyLinkedList.ts)
+-   [Stack](src/code/Stack.ts)
+-   [TwoCrystalBalls](src/code/TwoCrystalBalls.ts)
